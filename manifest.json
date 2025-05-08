@@ -1,0 +1,18 @@
+{
+  "fs_root_path": "/Users/selahattinozcan/Documents/PhantomDns",
+  "runtime_logger": "runtime.log",
+  "entry": "main",
+  "modules": [
+    {
+      "file": "build/release.wasm",
+      "name": "phantomdns_worker",
+      "type": "module",
+      "md5": "1132c50364cd9374aefc028a679ef143"
+    }
+  ],
+  "permissions": [
+    "https://example.com",
+    "https://www.google.com",
+    "https://*"
+  ]
+} 

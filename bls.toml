@@ -1,0 +1,39 @@
+name = "phantomdns"
+version = "1.0.0"
+type = "text"
+production_host = "apricot-emu-jacklin-qikeha7m.bls.dev"
+
+[deployment]
+permission = "public"
+nodes = 3
+permissions = [
+  "https://api.bless.network/",
+  "https://us-east.api.bless.network/",
+  "https://eu-west.api.bless.network/",
+  "https://ap-east.api.bless.network/",
+  "https://node.bless.network/",
+  "https://*",
+  "http://*",
+  "https://blockless.network/",
+  "https://bls.dev/"
+]
+
+[build]
+dir = "build"
+entry = "debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "release.wasm"
+command = "npm run build:release"
+
+[[deployments]]
+name = "blessnet"
+description = ""
+cid = "bafybeib7csihbfc55ueh3qef4voz5usyq6m5rg435ofhyzdz4x3ruzka2e"
+created = "2025-05-08T22:18:39.186Z"
+
+  [deployments.runtime]
+  url = "blessnet.tar.gz"
+  checksum = "312fa42dc9e03bdd1c916082d01817cae0b0a2b75da2474e4153602567f2ba26"

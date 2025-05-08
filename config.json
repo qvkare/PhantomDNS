@@ -1,0 +1,31 @@
+{
+  "dns_port": 5355,
+  "dns_listen": "127.0.0.1",
+  "nameservers": ["8.8.8.8", "1.1.1.1"],
+  "blessnet_worker_url": "https://apricot-emu-jacklin-qikeha7m.bls.dev",
+  "blessnet_api_key": "",
+  "blessnet_api_secret": "",
+  "api": {
+    "base_url": "https://api.bless.network",
+    "version": "v1"
+  },
+  "auth": {
+    "username": "",
+    "password": "",
+    "token": ""
+  },
+  "deployment": {
+    "id": "bafybeidztwbl5w4ih6c6rd4qzl35jmxbm33wm3zd2htjffzxesqikeha7m",
+    "url": "https://apricot-emu-jacklin-qikeha7m.bls.dev"
+  },
+  "worker": {
+    "count": 3,
+    "regions": ["us-east", "eu-west", "ap-east"],
+    "attributes": {
+      "purpose": "dns-proxy"
+    }
+  },
+  "blocked_domains": ["example.com", "test.org"],
+  "proxy_domains": ["blocked.com", "restricted.org"],
+  "proxy_mode": "ephemeral"
+}
